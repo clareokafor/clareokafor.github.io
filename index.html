@@ -23,7 +23,7 @@
 			<style>
 				body {
 					font-family: Arial, sans-serif;
-					background-color: #f4f4f4;
+					background-color: #8b5959;
 					margin: 0;
 					padding: 0;  
 				}
@@ -41,7 +41,7 @@
 				}
 
 				article {
-					background-color: #fff;
+					background-color: rgb(255, 255, 255);
 					border-radius: 30px;
 					margin-bottom: 20px;
 					padding: 1px;
@@ -64,14 +64,24 @@
 					margin-top: 10px;
 				}
 		
-				.actions .button {
+				/* .actions .button {
 					background-color: #4CAF50;
 					color: #fff;
 					text-decoration: none;
 					padding: 10px 20px;
 					border-radius: 5px;
 					display: inline-block;
+				} */
+				.actions .button {
+					background-color: #FFC107;
+					color: #fff;
+					text-decoration: none;
+					border-radius: 30px; /* higher value = more rounded */
+					display: inline-block;
+					text-align: center;
+					padding: 2px 20px;
 				}
+				
 
 				.image.main {
 					display: flex;
@@ -85,6 +95,46 @@
 					display: block; /* This ensures that margin: auto; works */
 					margin: auto; /* Centers the image horizontally */
        			 }
+				header.major h1 {
+					text-transform: none !important; /* keep sentence case */
+					font-size: 2rem !important;      /* adjust size */
+					line-height: 1.2;    
+				}
+				header.major h1 {
+					text-transform: none !important; /* keep sentence case */
+					font-size: 2rem !important;      /* adjust size */
+					line-height: 1.2;  
+				}
+
+				#intro h1 {
+					text-transform: none !important;
+				}
+
+				h2 {
+					font-size: 24px;
+					margin: 10px 0;
+					text-transform: none !important;
+				}
+
+				.skills-badges {
+				margin-top: 15px;
+				margin-bottom: 20px;
+			}
+				.badge {
+				display: inline-block;
+				background-color: #06204d; 
+				color: #FFC107;
+				font-size: 14px;
+				font-weight: 600;
+				padding: 8px 14px;
+				border-radius: 20px; /
+				margin: 5px 6px;
+				transition: 0.3s;
+			}
+				.badge:hover {
+				background-color: #e69500; /* darker amber on hover */
+				cursor: default;
+			}
 
 			</style>
 		</head>
@@ -95,8 +145,8 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Ogochukwu Jane Okafor<br /></h1>
-							<h2>Data Analyst/Data Scientist</h2>
-						<p>A dedicated professional passionate about using intellectual and technical skills to handle and communicate data skillfully. </p>
+							<h2>Data Scientist | Machine Learning Engineer | AI Trainer</h2>
+						<p>I don’t just analyze data I uncover the stories behind it.</p>
 						
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -105,7 +155,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
+						<a href="index.html" class="logo">Welcome</a>
 					</header>
 
 				<!-- Nav -->
@@ -128,19 +178,36 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>About Me</h1>
-									<a href="#" class="image main">
-										<img src="images/aboutme.jpg" alt="" style="max-width: 20%; height: 100%;" />
-									</a>
+									<h1>Professional Summary</h1>
+									<li href="#" class="image main">
+										<img src="images/newheadshot.png" alt="" style="max-width: 20%; height: 100%;" />
+									</li>
 
 								</header>
-									<p>Data has always fascinated me. It is incredible how numbers can tell stories and shape the future. That was what led me 
-										to a Master's in Data Science and Artificial Intelligence, after finishing my Economics degree. For the past five years, 
-										I have been deeply engrossed in analyzing datasets, coding, and extracting actionable insights to inform strategic decisions.
-										My skill set includes advanced proficiency in tools like Python, SQL, Excel, Power BI, and other software languages and tools.
-									</p>
-										I love the fast pace and the feeling of directly contributing to a company's success. I am eager to join a team that values innovation and data-driven 
-										strategies and tackle initiatives that deliver real, measurable results.
+									<p>
+										I have always been fascinated by the way data can uncover patterns, explain human behavior, and even guide the future. 
+										That curiosity took me from an Economics degree to a Masters in Data Science and Artificial Intelligence. 
+										Over the past five years, I have worked with datasets of all kinds, digging into the details, coding solutions, and turning raw numbers into insights that support smarter decisions. 
+										Along the way, I have become skilled with Python, SQL, Excel, Power BI, Microsoft Azure, and more recently Generative AI and large language models (LLMs), which I have applied to create smarter and more scalable solutions.
+									
+									<p>
+										What excites me most is the chance to solve meaningful problems in a fast moving environment, where data and AI directly shape strategy and outcomes. 
+										I am eager to bring that mindset to a team that values creativity, innovation, and measurable impact.
+										</p>
+									<div class="skills-section">
+										<h3 class="skills-heading">Key Skills</h3>
+									<!-- Skill Badges Section -->
+									<div class="skills-badges">
+										<span class="badge">Python</span>
+										<span class="badge">Power BI</span>
+										<span class="badge">Excel</span>
+										<span class="badge">SQL</span>
+										<span class="badge">Microsoft Azure</span>
+										<span class="badge">Generative AI</span>
+										<span class="badge">Large Language Models (LLMs)</span>
+										<span class="badge">Tableau</span>
+									</div>
+
 
 									<hr/>
 								
@@ -148,8 +215,12 @@
 									<hr/>
 									
 				
-							
-							<p><span class="image left"><img src="images/btc.jpg" alt="" /></span><h3>Bitcoin Future Price Prediction</h3>
+							<p><span class="image right"><img src="images/binsight.jpeg" alt="" /></span><h3>Business Insight 360</h3>
+							Designed a multi-view Power BI dashboard for AtliQ Hardware, analyzing finance, sales, marketing, supply chain, and management, by transforming 1.8M+ MySQL and Excel records to improve efficiency by 30% with DAX Studio and support data-driven decisions.
+							</p>
+							<hr/>
+
+							<p><span class="image left"><img src="images/bitcon.jpeg" alt="" /></span><h3>Bitcoin Future Price Prediction</h3>
 							This project employs machine learning techniques, primarily utilizing the 
 							historical Bitcoin-GBP data spanning from January 1st, 2015, to September 1st, 2023.Four models – Multilayer Perceptron (MLP), Long Short-Term Memory (LSTM) 
 							network, Random Forest Regressor, and Gradient Boosting Machine Regressor were developed to predict Bitcoin prices. The top two performers, MLP and Random Forest, from both artificial neural networks and ensemble models were selected and optimized for future price predictions, yielding promising results exceeding 99% accuracy.</p>
@@ -158,10 +229,7 @@
 							<p><span class="image right"><img src="images/ssegment.jpeg" alt="" /></span> <h3>Semantic Segmentation: Exploring FCN, PSPNet, and UNET Architectures</h3>
 							This project delves into the comparative efficacy of three prominent architectures: FCN, PSPNet, and U-Net. By implementing these models and analyzing their performance, I gain profound insights into their strengths and limitations. Exploring augmentation techniques, I uncovered a plethora of methods for manipulating and presenting images, enhancing their diversity, and enriching our understanding of segmentation challenges. 
 							<hr/>
-							<p><span class="image left"><img src="images/imagerecognition.jpeg" alt="" /></span>
-							<h3>Building a Neural Network Model for Classification Problem</h3>
-							This project delves into the comparative performance of Multi-Layer Perceptron (MLP) and Convolutional Neural Network (CNN) models for handwritten character recognition using the EMNIST dataset. The analysis demonstrates that CNNs consistently outperform MLPs in terms of accuracy and robustness using different hyperparameter tuning configurations. CNNs exhibited superior accuracy compared to MLPs, achieving an overall test accuracy of 87.88%, surpassing MLP's 83.65%.</p>
-						</section>
+							</section>
 
 						<!-- Footer -->
 							<footer>
@@ -189,7 +257,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; OGOCHUKWU JANE OKAFOR</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
